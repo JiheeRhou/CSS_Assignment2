@@ -1,0 +1,97 @@
+/* some basic styling to make our page look a little nicer */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+}
+header{
+    background-color: #7a2518;
+    height: 100px;
+    padding: 10px 15px;
+}
+header h1{
+    color: #f4f4f4;
+    font-size: 2.7em;
+    font-kerning: normal;
+}
+.title-row{
+    text-align: center;
+    text-shadow: 4px 2px 4px rgba(0,0,0,.5);
+}
+/* now time to focus on our text */
+/* apply out google font */
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+p,a,li{
+    font-family: 'Lato',sans-serif;
+    font-size: 20px;
+    margin: 0px;
+}
+/* custom font */
+@font-face {
+    /* name our font */
+    font-family: customFont;
+    src: url("../font/betsie honey.ttf");
+}
+.title-row h1{
+    font-family: customFont;
+    font-size: 92px;
+    color: #f9a825;
+}
+/* lyrics */
+#lyrics{
+    padding: 2%;
+    font-weight: 600;
+    line-height: 1.8;
+    text-align: center;
+}
+.lyrics-one{
+    background-color: #7d7d00;
+    color: #f4f4f4;
+    letter-spacing: 1.75px;
+}
+.lyrics-one div:first-of-type p::first-letter{
+    font-weight: 600;
+    font-size: 42px;
+}
+.lyrics-two{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.lyrics-two div:nth-child(odd){
+    color: #7d0000;
+}
+.lyrics-two div:nth-child(even){
+    color: #7d7d00;
+}
+.lyrics-two div p::first-line {
+    font-size: 32px;
+}
+.lyrics-last{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.lyrics-last div:nth-child(1){
+    background-color: #05296d;
+    color: #a0d8f8;
+}
+.lyrics-last div:nth-child(2){
+    background-color: #a0f8cf;
+    color: #038d25;
+}
+#sing{
+    background-color: #1ecbe1;
+    color: #072d67;
+    font-size: 32px;
+}
+#lyrics div span{
+    font-family: customFont;
+    font-weight: 600;
+    font-size: 25px;
+    color: #f9a825;
+}
+#lyrics div:nth-child(2){
+    text-shadow: 4px 2px 4px rgba(0,0,0,.5);
+}
